@@ -1,3 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
 div#galerie {
   width: 410px;
   background: rgb(255, 255, 255);
@@ -41,4 +61,15 @@ dl#photo img {
   border: 1px solid #dcb;
   object-fit: contain;
   width: 100%;
+}
+
+@media (width < 500px) {
+  h1 {
+    padding: 5px;
+    font-size: 20px;
+  }
+  div#galerie {
+    margin: auto;
+    width: auto;
+  }
 }
